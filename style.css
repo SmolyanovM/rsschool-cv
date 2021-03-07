@@ -80,3 +80,8 @@ main h2 {
     padding-right: 30px;
     text-align: justify;
 }
+
+footer{
+    margin: 0 auto;
+    text-align: center;
+}
