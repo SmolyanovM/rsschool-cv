@@ -20,7 +20,6 @@
   </header>
   <main>
       <section class="column">
-	<h2>  </h2>
         <article>
 	  <h2>About me</h2>
 	  <p>
@@ -43,7 +42,6 @@
         </article>
       </section>
       <section class="column">
-	<h2>  </h2>
         <article>
 	  <h2>Education</h2>
 	  <ul>
@@ -87,15 +85,18 @@
         <article>
 	  <h2>Example of my code</h2>
 	  <p><code>
-	     javascript<Br>
-	     //code example from codewars kata<Br>
-	     function factorial(n) {<Br>
-  	       if (n &lt 0 || n &gt 12) {<Br>
-    	         throw new RangeError('RangeError');<Br>
-  	       } else {<Br>
-   	         return n ? n * factorial(n - 1) : 1;<Br>
-  	       }<Br>
-	     }<Br>
+	     javascript <Br>
+	     //code example from codewars kata <Br>
+	     function mygcd(x,y){ <Br>
+             x = Math.abs(x); <Br>
+             y = Math.abs(y); <Br>
+             if (Number.isInteger(x) && Number.isInteger(y) && !(x===0 && y===0)){ <Br>
+             if (!y) { <Br> 
+             return x <Br>
+             } <Br> 
+             return mygcd(y, x % y) <Br>
+             } <Br>
+             } <Br>
 	  </code></p>
         </article>
       </section>
